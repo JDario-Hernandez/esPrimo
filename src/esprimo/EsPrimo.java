@@ -19,7 +19,7 @@ public class EsPrimo {
         // TODO code application logic here
         String numberStr = JOptionPane.showInputDialog("enter a number between 0 and 2000000 to validate if it is prime");
         int number = Integer.parseInt(numberStr);
-        if (number > 2 && number < 2000000) {
+        if (number >= 2 && number < 2000000) {
             if (isPrime(number)) {
                 JOptionPane.showMessageDialog(null, number + " prime.");
             } else {
