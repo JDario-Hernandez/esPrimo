@@ -17,16 +17,16 @@ public class EsPrimo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String numberStr = JOptionPane.showInputDialog("ingrese numero entero positivo para validar si es primo");
+        String numberStr = JOptionPane.showInputDialog("enter a number between 0 and 2000000 to validate if it is prime");
         int number = Integer.parseInt(numberStr);
-        if (number > 0) {
+        if (number > 2 && number < 2000000) {
             if (isPrime(number)) {
-                JOptionPane.showMessageDialog(null, number + " es primo.");
+                JOptionPane.showMessageDialog(null, number + " prime.");
             } else {
-                JOptionPane.showMessageDialog(null, number + " no es primo.");
+                JOptionPane.showMessageDialog(null, number + " not prime.");
             }
         } else {
-            JOptionPane.showMessageDialog(null, "el numero debe ser mayor a 0");
+            JOptionPane.showMessageDialog(null, "The number must be between 2 and 2000000");
         }
     }
 
